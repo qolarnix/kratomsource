@@ -11,3 +11,11 @@ $router->get('/wiki/{topic_slug}', function($topic_slug) {
     print_r($topic);
     echo '</pre>';
 });
+
+$router->get('/vendors/{vendor_slug}', function($vendor_slug) {
+    $vendor = vendor_by_slug($vendor_slug);
+
+    echo '<pre>';
+    print_r($vendor);
+    echo '</pre>';
+});

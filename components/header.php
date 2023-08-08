@@ -17,18 +17,28 @@
 </head>
 <body class="antialiased bg-stone-100 text-stone-800">
 
-    <header class="py-6 px-6">
+    <header class="py-6 px-6 border-b border-stone-200">
         <div class="container mx-auto">
-            <div class="flex flex-wrap items-center justify-between">
+            <div class="flex flex-wrap items-center justify-start gap-12">
 
                 <!-- logo -->
                 <a href="/" class="inline-block">
                     <div class="flex items-center gap-1 select-none">
-                        <ion-icon name="leaf-sharp" class="text-emerald-600 text-4xl"></ion-icon>
+                        <ion-icon name="leaf" class="text-emerald-600 text-4xl"></ion-icon>
                         <span class="text-3xl font-bold">KratomSource</span>
                     </div>
                 </a>
-                
+
+                <div>
+                    <ul class="flex items-center gap-6 font-medium">
+                        <li><a href="/vendors/">Vendors</a></li>
+                        <li><a href="/wiki/">Kratom Wiki</a></li>
+                        <li><a href="/learn/">Strain & Vein Color</a></li>
+                        <li><a href="/blog/">News & Research</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </header>

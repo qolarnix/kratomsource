@@ -16,3 +16,4 @@ $capsule->bootEloquent();
 
 require_once __DIR__ . '/actions/users.php';
 require_once __DIR__ . '/actions/topics.php';
+require_once __DIR__ . '/actions/vendors.php';
