@@ -15,14 +15,10 @@
             </div>
 
             <div>
-                <h4 class="font-medium text-lg mb-3">Get in Touch</h4>
-                <p class="mb-8">contact@kratomsource.co</p>
-
-                <div class="flex items-center text-2xl text-stone-600 gap-3">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                    <ion-icon name="logo-twitter"></ion-icon>
-                    <ion-icon name="logo-facebook"></ion-icon>
+                <h4 class="font-medium text-lg mb-3">Vendor Directory</h4>
+                <div class="flex flex-col gap-2">
+                    <p>Claim your business</p>
+                    <p>Find vendors</p>
                 </div>
             </div>
 
@@ -36,10 +32,14 @@
             </div>
 
             <div>
-                <h4 class="font-medium text-lg mb-3">Vendor Directory</h4>
-                <div class="flex flex-col gap-2">
-                    <p>Claim your business</p>
-                    <p>Find vendors</p>
+                <h4 class="font-medium text-lg mb-3">Get in Touch</h4>
+                <p class="mb-8">contact@kratomsource.co</p>
+
+                <div class="flex items-center text-2xl text-stone-600 gap-3">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
                 </div>
             </div>
 
