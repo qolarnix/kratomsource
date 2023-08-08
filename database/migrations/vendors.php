@@ -20,6 +20,7 @@ Manager::schema()->create('vendors', function($t) {
     $t->string('url')->unique();
     $t->boolean('is_online');
     $t->boolean('is_brick');
+    $t->boolean('delivery');
     $t->boolean('claimed');
     $t->timestamp('created_at')->useCurrent();
     $t->timestamp('updated_at')->useCurrent();
@@ -39,6 +40,7 @@ for($i = 0; $i < 10; $i++) {
         'url' => $faker->url(),
         'is_online' => $faker->boolean(),
         'is_brick' => $faker->boolean(),
+        'delivery' => $faker->boolean(),
         'claimed' => $faker->boolean()
     ];
     $vendors[] = $vendor;

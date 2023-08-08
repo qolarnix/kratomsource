@@ -17,6 +17,7 @@ function vendor_transformer(object $args): array {
         'url' => $args->url,
         'is_online' => $args->is_online,
         'is_brick' => $args->is_brick,
+        'delivery' => $args->delivery,
         'claimed' => $args->claimed
     ];
     return $vendor_data;

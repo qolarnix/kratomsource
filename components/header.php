@@ -19,7 +19,7 @@
 
     <header class="py-6 px-6 border-b border-stone-200">
         <div class="container mx-auto">
-            <div class="flex flex-wrap items-center justify-start gap-12">
+            <div class="flex flex-wrap items-center justify-between gap-8">
 
                 <!-- logo -->
                 <a href="/" class="inline-block">
@@ -30,7 +30,7 @@
                 </a>
 
                 <div>
-                    <ul class="flex items-center gap-6 font-medium">
+                    <ul class="hidden md:flex items-center gap-6 font-medium">
                         <li><a href="/vendors/">Vendors</a></li>
                         <li><a href="/wiki/">Kratom Wiki</a></li>
                         <li><a href="/learn/">Strain & Vein Color</a></li>

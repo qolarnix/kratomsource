@@ -5,14 +5,24 @@ get_template('header', [
 ]);
 ?>
 
-<section class="py-6 px-6">
+<section class="py-3 px-6">
     <div class="container mx-auto">
-        <di class="flex items-center gap-3 text-stone-600 capitalize">
-            <a href="/">Home</a>
-            <span>/</span>
-            <a href="/vendors/">Vendors</a>
-            <span>/</span>
-            <p><?php echo $vendor['name']; ?></p>
+        <div class="flex flex-wrap gap-6 items-center justify-between">
+            <div class="flex items-center gap-3 text-stone-600 capitalize">
+                <a href="/">Home</a>
+                <span>/</span>
+                <a href="/vendors/">Vendors</a>
+                <span>/</span>
+                <p><?php echo $vendor['name']; ?></p>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <ion-icon name="location-outline" class="text-2xl text-emerald-600"></ion-icon>
+                <p class="text-stone-600"><?php echo $vendor['address']; ?></p>
+                <a href="/" target="_block" class="inline-block ml-2 bg-stone-200 text-stone-600 font-medium py-1 px-4 rounded">
+                    Open in Maps
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -23,17 +33,39 @@ get_template('header', [
 
             <div>
                 <h1 class="capitalize text-3xl md:text-5xl font-medium mb-6"><?php echo $vendor['name']; ?></h1>
-                <?php if($vendor['claimed'] === 1): ?>
-                    <p class="text-xl text-emerald-600 flex items-center gap-2">
-                        <ion-icon name="checkmark-circle-outline" class="text-3xl"></ion-icon>
-                        <span>Verified Vendor</span>
-                    </p>
-                <?php else: ?>
-                    <p class="font-medium text-lg">
-                        Own this business?
-                        <a href="/claim/" class="text-emerald-600">Get Verified</a>
-                    </p>
-                <?php endif; ?>
+                <div class="mb-8">
+                    <?php if($vendor['claimed'] === 1): ?>
+                        <p class="text-xl text-emerald-600 flex items-center gap-2">
+                            <ion-icon name="checkmark-circle-outline" class="text-3xl"></ion-icon>
+                            <span class="font-bold">Verified Vendor</span>
+                        </p>
+                    <?php else: ?>
+                        <p class="font-medium text-lg">
+                            Own this business?
+                            <a href="/claim/" class="text-emerald-600">Get Verified</a>
+                        </p>
+                    <?php endif; ?>
+                </div>
+                <div class="flex flex-wrap items-center gap-6">
+                    <?php if($vendor['is_online'] === 1): ?>
+                        <div class="border border-indigo-200 bg-indigo-100 text-indigo-600 text-sm font-bold rounded py-2 px-3 flex items-center gap-2">
+                            <ion-icon name="card-outline" class="text-xl"></ion-icon>
+                            <p>Online Ordering</p>
+                        </div>
+                    <?php endif; ?>
+                    <?php if($vendor['is_brick'] === 1): ?>
+                        <div class="border border-indigo-200 bg-indigo-100 text-indigo-600 text-sm font-bold rounded py-2 px-3 flex items-center gap-2">
+                            <ion-icon name="storefront-outline" class="text-xl"></ion-icon>
+                            <p>Brick & Mortar</p>
+                        </div>
+                    <?php endif; ?>
+                    <?php if($vendor['delivery'] === 1): ?>
+                        <div class="border border-indigo-200 bg-indigo-100 text-indigo-600 text-sm font-bold rounded py-2 px-3 flex items-center gap-2">
+                            <ion-icon name="car-outline" class="text-xl"></ion-icon>
+                            <p>Local Delivery</p>
+                        </div>
+                    <?php endif; ?>
+                </div>
             </div>
 
             <div class="font-medium">
