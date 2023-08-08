@@ -77,6 +77,29 @@ $vendors = get_vendors(4);
         <h2 class="text-center font-medium text-3xl mb-12">
             News & Research Articles
         </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-9 lg:gap-6">
+
+            <div class="grid grid-cols-2 gap-6">
+                <div class="aspect-w-16 aspect-h-16 bg-stone-200 rounded"></div>
+                <div>
+                    <h3 class="text-xl md:text-2xl font-medium leading-normal mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </h3>
+                    <p class="text-emerald-600 text-sm font-medium">Author Name</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-6">
+                <div class="aspect-w-16 aspect-h-16 bg-stone-200 rounded"></div>
+                <div>
+                    <h3 class="text-xl md:text-2xl font-medium leading-normal mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </h3>
+                    <p class="text-emerald-600 text-sm font-medium">Author Name</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
 
