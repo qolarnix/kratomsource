@@ -4,6 +4,10 @@ $router->get('/', function() {
     get_template('landing');
 });
 
+$router->get('/wiki', function() {
+    get_template('wiki');
+});
+
 $router->get('/wiki/{topic_slug}', function($topic_slug) {
     $topic = topic_by_slug($topic_slug);
 
