@@ -15,4 +15,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
-<body class="antialiased bg-stone-100">
+<body class="antialiased bg-stone-100 text-stone-800">
+
+    <header class="py-6 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap items-center justify-between">
+
+                <!-- logo -->
+                <a href="/" class="inline-block">
+                    <div class="flex items-center gap-1 select-none">
+                        <ion-icon name="leaf-sharp" class="text-emerald-600 text-4xl"></ion-icon>
+                        <span class="text-3xl font-bold">KratomSource</span>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+    </header>
