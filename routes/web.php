@@ -16,6 +16,10 @@ $router->get('/wiki/{topic_slug}', function($topic_slug) {
     echo '</pre>';
 });
 
+$router->get('/vendors', function() {
+    get_template('archive-vendor');
+});
+
 $router->get('/vendors/{vendor_slug}', function($vendor_slug) {
     $vendor = vendor_by_slug($vendor_slug);
 
