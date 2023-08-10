@@ -11,6 +11,7 @@ function vendor_transformer(object $args): array {
         'name' => $args->name,
         'slug' => $args->slug,
         'bio' => $args->bio,
+        'rating' => $args->rating,
         'public_email' => $args->public_email,
         'public_phone' => $args->public_phone,
         'address' => $args->address,

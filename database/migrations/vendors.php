@@ -14,6 +14,7 @@ Manager::schema()->create('vendors', function($t) {
     $t->string('name')->unique();
     $t->string('slug')->unique();
     $t->text('bio')->unique();
+    $t->integer('rating');
     $t->string('public_email')->unique();
     $t->string('public_phone')->unique();
     $t->string('address')->unique();
@@ -34,6 +35,7 @@ for($i = 0; $i < 10; $i++) {
         'name' => $faker_name = $faker->words(3, true),
         'slug' => str_replace(' ', '-', $faker_name),
         'bio' => $faker->sentence(),
+        'rating' => $faker->numberBetween(1, 5),
         'public_email' => $faker->email(),
         'public_phone' => $faker->phoneNumber(),
         'address' => $faker->address(),
