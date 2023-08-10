@@ -1,7 +1,8 @@
 <?php declare(strict_types=1);
 
+$vendor_seo_title = 'KratomSource - Order or Pickup Kratom - '. ucwords($vendor['name']);
 get_template('header', [
-    'title' => 'KratomSource - The Worlds Kratom Information Resource - Vendor Directory'
+    'title' => $vendor_seo_title,
 ]);
 ?>
 

@@ -8,7 +8,7 @@ get_template('header', [
 // stone-800
 
 $topics = get_topics(4);
-$vendors = get_vendors(4);
+$vendors = get_vendors(3);
 ?>
 
 <section class="py-16 px-6 border-b border-stone-200">
@@ -32,6 +32,7 @@ $vendors = get_vendors(4);
                     <div class="flex flex-col gap-3">
                         <ion-icon name="document-text-outline" class="text-emerald-600 text-3xl md:text-5xl"></ion-icon>
                         <p class="text-xl md:text-2xl font-medium capitalize"><?php echo $topic['title']; ?></p>
+                        <p class="text-lg text-stone-600"><?php echo $topic['excerpt']; ?></p>
                     </div>
                 </a>
             <?php endforeach; ?>
@@ -44,7 +45,7 @@ $vendors = get_vendors(4);
         <h2 class="text-center font-medium text-3xl mb-12">
             Kratom Vendors
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12">
             <?php foreach($vendors as $vendor): ?>
                 <div>
                     <div class="aspect-w-16 aspect-h-9 bg-stone-200 rounded mb-3"></div>

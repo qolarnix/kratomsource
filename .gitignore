@@ -6,3 +6,5 @@ database/default.db
 database/*.db
 
 assets/styles/dist.css
+
+.DS_store

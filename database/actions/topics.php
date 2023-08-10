@@ -10,7 +10,8 @@ function topic_transformer(object $args): array {
         'id' => $args->id,
         'title' => $args->title,
         'slug' => $args->slug,
-        'content' => $args->content
+        'content' => $args->content,
+        'excerpt' => get_excerpt($args->content, 40),
     ];
     return $topic_data;
 }
