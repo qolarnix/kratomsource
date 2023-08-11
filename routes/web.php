@@ -27,3 +27,11 @@ $router->get('/vendors/{vendor_slug}', function($vendor_slug) {
         'vendor' => $vendor
     ]);
 });
+
+$router->get('/blog/{post_slug}', function($post_slug) {
+    $post = post_by_slug($post_slug);
+
+    echo '<pre>';
+    print_r($post);
+    echo '</pre>';
+});
