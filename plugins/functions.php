@@ -28,3 +28,17 @@ function escape(string $input): string {
     $clean = htmlspecialchars($input, ENT_QUOTES, 'UTF-8');
     return $clean;
 }
+
+/**
+ * Location
+ */
+function client_loc() {
+    $query = @unserialize(file_get_contents('http://ip-api.com/php/'));
+    if($query && $query['status'] == 'success') {
+        return [
+            'region' => $query['region'],
+            'regionName' => $query['regionName'],
+            'city' => $query['city']
+        ];
+    }
+}

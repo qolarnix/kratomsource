@@ -5,6 +5,8 @@ get_template('header', [
 ]);
 
 $vendors = get_vendors();
+
+$client_location = client_loc();
 ?>
 
 <section class="py-6 px-6">
@@ -17,6 +19,14 @@ $vendors = get_vendors();
             </div>
             <div></div>
         </div>
+    </div>
+</section>
+
+<section class="py-6 px-6">
+    <div class="container mx-auto">
+        <p class="text-lg font-medium">
+            Find kratom vendors in: <?php echo $client_location['city']; ?>, <?php echo $client_location['region']; ?>
+        </p>
     </div>
 </section>
 
