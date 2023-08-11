@@ -13,7 +13,7 @@ $topics = get_topics();
             <div class="flex items-center gap-3 text-stone-600 capitalize">
                 <a href="/">Home</a>
                 <span>/</span>
-                <a href="/wiki/">Wiki</a>
+                <p>Wiki</p>
             </div>
             <div></div>
         </div>

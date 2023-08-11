@@ -9,6 +9,7 @@ get_template('header', [
 
 $topics = get_topics(4);
 $vendors = get_vendors(3);
+$posts = get_posts(4);
 ?>
 
 <section class="py-16 px-6 border-b border-stone-200">
@@ -62,25 +63,18 @@ $vendors = get_vendors(3);
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-9 lg:gap-6">
 
-            <div class="grid grid-cols-2 gap-6">
-                <div class="aspect-w-16 aspect-h-16 bg-stone-200 rounded"></div>
-                <div>
-                    <h3 class="text-xl md:text-2xl font-medium leading-normal mb-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                    </h3>
-                    <p class="text-emerald-600 text-sm font-medium">Author Name</p>
+            <?php foreach($posts as $post): ?>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="aspect-w-16 aspect-h-16 bg-stone-200 rounded"></div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-medium leading-normal mb-4">
+                            <?php echo $post['title']; ?>
+                        </h3>
+                        <p class="mb-6 text-lg text-stone-600"><?php echo $post['excerpt']; ?></p>
+                        <p class="text-emerald-600 text-sm font-medium">Author Name</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="grid grid-cols-2 gap-6">
-                <div class="aspect-w-16 aspect-h-16 bg-stone-200 rounded"></div>
-                <div>
-                    <h3 class="text-xl md:text-2xl font-medium leading-normal mb-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                    </h3>
-                    <p class="text-emerald-600 text-sm font-medium">Author Name</p>
-                </div>
-            </div>
+            <?php endforeach; ?>
 
         </div>
     </div>
