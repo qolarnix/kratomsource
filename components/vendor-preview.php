@@ -9,16 +9,18 @@ $vendors = get_vendors($count);
     $rating_ext = 5 - $vendor['rating'];
 ?>
     <div>
-        <div class="aspect-w-16 aspect-h-9 bg-stone-200 rounded mb-3"></div>
-        <h3 class="text-xl font-medium capitalize mb-2 min-h-[60px]">
-            <span class="flex items-center gap-2">
-                <?php echo $vendor['name']; ?>
-                <?php if($vendor['claimed']): ?>
-                    <ion-icon name="checkmark-circle-outline" class="text-xl text-emerald-600"></ion-icon>
-                <?php endif; ?>
-            </span>
-        </h3>
-        <ul class="flex items-center text-stone-900 text-sm mb-3">
+        <a href="/vendors/<?php echo $vendor['slug']; ?>">
+            <div class="aspect-w-16 aspect-h-9 bg-stone-200 rounded mb-3 w-full"></div>
+            <h3 class="text-xl font-medium capitalize mb-2 min-h-[60px]">
+                <span class="flex items-center gap-2">
+                    <?php echo $vendor['name']; ?>
+                    <?php if($vendor['claimed']): ?>
+                        <ion-icon name="checkmark-circle-outline" class="text-xl text-emerald-600"></ion-icon>
+                    <?php endif; ?>
+                </span>
+            </h3>
+        </a>
+        <ul class="flex items-center text-stone-800 text-sm mb-3">
             <?php foreach(range(1, $rating) as $star): ?>
                 <li><ion-icon name="star"></ion-icon></li>
             <?php endforeach; ?>

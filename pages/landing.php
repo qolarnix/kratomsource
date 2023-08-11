@@ -4,11 +4,7 @@ get_template('header', [
     'title' => 'KratomSource - The Worlds Kratom Information Resource'
 ]);
 
-// emerald-600
-// stone-800
-
 $topics = get_topics(4);
-$vendors = get_vendors(3);
 $posts = get_posts(4);
 ?>
 

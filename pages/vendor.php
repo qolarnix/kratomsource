@@ -9,7 +9,7 @@ get_template('header', [
 <section class="py-3 px-6">
     <div class="container mx-auto">
         <div class="flex flex-wrap gap-6 items-center justify-between">
-            <div class="flex items-center gap-3 text-stone-600 capitalize">
+            <div class="flex items-center gap-3 text-stone-600 text-sm md:text-base capitalize">
                 <a href="/">Home</a>
                 <span>/</span>
                 <a href="/vendors/">Vendors</a>
@@ -18,9 +18,9 @@ get_template('header', [
             </div>
 
             <div class="flex items-center gap-2">
-                <ion-icon name="location-outline" class="text-2xl text-emerald-600"></ion-icon>
-                <p class="text-stone-600"><?php echo $vendor['address']; ?></p>
-                <a href="/" target="_block" class="inline-block ml-2 bg-stone-200 text-stone-600 font-medium py-1 px-4 rounded">
+                <ion-icon name="location-outline" class="text-2xl text-emerald-600 hidden md:inline"></ion-icon>
+                <p class="text-stone-600 hidden md:inline"><?php echo $vendor['address']; ?></p>
+                <a href="/" target="_block" class="inline-block md:ml-2 bg-stone-200 text-stone-600 font-medium py-1 px-4 rounded">
                     Open in Maps
                 </a>
             </div>
@@ -47,29 +47,29 @@ get_template('header', [
                         </p>
                     <?php endif; ?>
                 </div>
-                <div class="flex flex-wrap items-center gap-6">
+                <div class="flex flex-wrap items-center gap-2 md:gap-4 text-xs md:text-sm">
                     <?php if($vendor['is_online'] === 1): ?>
-                        <div class="border border-indigo-200 bg-indigo-100 text-indigo-600 text-sm font-bold rounded py-2 px-3 flex items-center gap-2">
-                            <ion-icon name="card-outline" class="text-xl"></ion-icon>
+                        <div class="border border-indigo-200 bg-indigo-100 text-indigo-600 font-bold rounded py-2 px-3 flex items-center gap-2">
+                            <ion-icon name="card-outline" class="text-base md:text-xl"></ion-icon>
                             <p>Online Ordering</p>
                         </div>
                     <?php endif; ?>
                     <?php if($vendor['is_brick'] === 1): ?>
-                        <div class="border border-indigo-200 bg-indigo-100 text-indigo-600 text-sm font-bold rounded py-2 px-3 flex items-center gap-2">
-                            <ion-icon name="storefront-outline" class="text-xl"></ion-icon>
+                        <div class="border border-indigo-200 bg-indigo-100 text-indigo-600 font-bold rounded py-2 px-3 flex items-center gap-2">
+                            <ion-icon name="storefront-outline" class="text-base md:text-xl"></ion-icon>
                             <p>Brick & Mortar</p>
                         </div>
                     <?php endif; ?>
                     <?php if($vendor['delivery'] === 1): ?>
-                        <div class="border border-indigo-200 bg-indigo-100 text-indigo-600 text-sm font-bold rounded py-2 px-3 flex items-center gap-2">
-                            <ion-icon name="car-outline" class="text-xl"></ion-icon>
+                        <div class="border border-indigo-200 bg-indigo-100 text-indigo-600 font-bold rounded py-2 px-3 flex items-center gap-2">
+                            <ion-icon name="car-outline" class="text-base md:text-xl"></ion-icon>
                             <p>Local Delivery</p>
                         </div>
                     <?php endif; ?>
                 </div>
             </div>
 
-            <div class="font-medium">
+            <div class="font-medium mt-6 md:mt-0">
                 <p class="font-bold mb-2">Questions & Orders</p>
                 <p class="mb-1"><?php echo $vendor['public_email']; ?></p>
                 <p><?php echo $vendor['public_phone']; ?></p>
