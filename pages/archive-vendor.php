@@ -6,7 +6,9 @@ get_template('header', [
 
 $vendors = get_vendors();
 
-$client_location = client_loc();
+$cloc = client_loc();
+$state = $cloc['region'];
+$city = $cloc['city'];
 ?>
 
 <section class="py-6 px-6">
@@ -22,10 +24,10 @@ $client_location = client_loc();
     </div>
 </section>
 
-<section class="py-6 px-6">
+<section class="pt-6 px-6">
     <div class="container mx-auto">
-        <p class="text-lg font-medium">
-            Find kratom vendors in: <?php echo $client_location['city']; ?>, <?php echo $client_location['region']; ?>
+        <p class="text-2xl font-medium">
+            Find kratom vendors in: <?php echo $city; ?>, <?php echo $state; ?>
         </p>
     </div>
 </section>
