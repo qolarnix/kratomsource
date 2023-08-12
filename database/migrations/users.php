@@ -13,6 +13,7 @@ Manager::schema()->create('users', function($t) {
     $t->increments('id');
     $t->string('email')->unique();
     $t->string('username')->unique();
+    $t->boolean('is_admin')->default(false);
     $t->timestamp('created_at')->useCurrent();
     $t->timestamp('updated_at')->useCurrent();
 });
