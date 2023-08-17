@@ -15,6 +15,8 @@ function vendor_transformer(object $args): array {
         'public_email' => $args->public_email,
         'public_phone' => $args->public_phone,
         'address' => $args->address,
+        'city' => $args->city,
+        'state' => $args->state,
         'url' => $args->url,
         'is_online' => $args->is_online,
         'is_brick' => $args->is_brick,
@@ -30,6 +32,24 @@ function vendor_transformer(object $args): array {
 function vendor_by_slug(string $slug) {
     $vendor = Manager::table('vendors')->where('slug', $slug)->first();
     return vendor_transformer($vendor);
+}
+
+/**
+ * Get all vendors by location
+ */
+function get_vendors_loc(string $city, string $state): array {
+    $vendors = Manager::table('vendors')
+        ->where('city', $city)
+        ->where('state', $state)
+        ->get();
+
+    $requested = [];
+    foreach($vendors as $vendor) {
+        $request = vendor_transformer($vendor);
+        $requested[] = $request;
+    }
+
+    return $requested;
 }
 
 /**

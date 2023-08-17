@@ -1,8 +1,15 @@
 <?php declare(strict_types=1);
 
-$vendors = get_vendors($count);
+if($city && $state) { 
+    $vendors = get_vendors_loc($city, $state); 
+}
+else { 
+    $vendors = get_vendors($count);
+}
+
 ?>
 <?php 
+    if($vendors):
     foreach($vendors as $vendor):
 
     $rating = $vendor['rating'];
@@ -44,4 +51,12 @@ $vendors = get_vendors($count);
             Orders & Pickup
         </a>
     </div>
-<?php endforeach; ?>
+<?php 
+    endforeach; 
+    else:
+?>
+<div class="col-span-3 text-center flex flex-col gap-3">
+    <p class="text-lg">No Local Results Found for <?php echo $city; ?>, <?php echo $state; ?></p>
+    <p>Showing Online Vendors</p>
+</div>
+<?php endif; ?>

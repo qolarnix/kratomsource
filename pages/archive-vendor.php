@@ -4,8 +4,6 @@ get_template('header', [
     'title' => 'KratomSource - The Worlds Kratom Information Resource - Vendors'
 ]);
 
-$vendors = get_vendors();
-
 $cloc = client_loc();
 $state = $cloc['region'];
 $city = $cloc['city'];
@@ -37,7 +35,9 @@ $city = $cloc['city'];
         <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12">
             <?php
                 get_template('vendor-preview', [
-                    'count' => -1
+                    'count' => -1,
+                    'city' => $city,
+                    'state' => $state
                 ]);
             ?>
         </div>

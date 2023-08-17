@@ -18,6 +18,8 @@ Manager::schema()->create('vendors', function($t) {
     $t->string('public_email')->unique();
     $t->string('public_phone')->unique();
     $t->string('address')->unique();
+    $t->string('city');
+    $t->string('state');
     $t->string('url')->unique();
     $t->boolean('is_online');
     $t->boolean('is_brick');
@@ -39,6 +41,8 @@ for($i = 0; $i < 10; $i++) {
         'public_email' => $faker->email(),
         'public_phone' => $faker->phoneNumber(),
         'address' => $faker->address(),
+        'city' => $faker->city(),
+        'state' => $faker->stateAbbr(),
         'url' => $faker->url(),
         'is_online' => $faker->boolean(),
         'is_brick' => $faker->boolean(),
