@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-if($city && $state) { 
+if(isset($city) && isset($state)) { 
     $vendors = get_vendors_loc($city, $state); 
 }
 else { 
@@ -13,7 +13,7 @@ else {
     foreach($vendors as $vendor):
 
     $rating = $vendor['rating'];
-    $rating_ext = 5 - $vendor['rating'];
+    $rating_ext = 5 - $vendor['rating']; 
 ?>
     <div>
         <a href="/vendors/<?php echo $vendor['slug']; ?>">
