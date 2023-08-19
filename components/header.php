@@ -25,7 +25,7 @@
                 <a href="/" class="inline-block">
                     <div class="flex items-center gap-1 select-none">
                         <ion-icon name="leaf" class="text-emerald-600 text-4xl"></ion-icon>
-                        <span class="text-3xl font-bold">KratomSource</span>
+                        <span class="text-3xl font-bold">kratomlist.org</span>
                     </div>
                 </a>
 
