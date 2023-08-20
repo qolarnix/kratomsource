@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 get_template('header', [
-    'title' => 'KratomSource - The Worlds Kratom Information Resource'
+    'title' => 'KratomList - The Worlds Kratom Information Resource'
 ]);
 
 $topics = get_topics(4);
