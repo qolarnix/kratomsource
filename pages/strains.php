@@ -31,10 +31,10 @@ get_template('header', [
             Kratom strains by vein color
         </h2>
 
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-9">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-12">
             <a href="/" class="inline-block">
                 <div class="flex flex-col gap-4">
-                    <div class="banner-green aspect-w-16 aspect-h-9 rounded shadow-sm"></div>
+                    <div class="banner-green aspect-w-16 aspect-h-6 rounded"></div>
                     <p class="text-lg font-bold text-stone-800 capitalize">Green Vein</p>
                     <p class="text-base text-stone-700">Kratom Strains</p>
                 </div>
@@ -42,7 +42,7 @@ get_template('header', [
 
             <a href="/" class="inline-block">
                 <div class="flex flex-col gap-4">
-                    <div class="banner-red aspect-w-16 aspect-h-9 rounded shadow-sm"></div>
+                    <div class="banner-red aspect-w-16 aspect-h-6 rounded"></div>
                     <p class="text-lg font-bold text-stone-800 capitalize">Red Vein</p>
                     <p class="text-base text-stone-700">Kratom Strains</p>
                 </div>
@@ -50,7 +50,7 @@ get_template('header', [
 
             <a href="/" class="inline-block">
                 <div class="flex flex-col gap-4">
-                    <div class="banner-yellow aspect-w-16 aspect-h-9 rounded shadow-sm"></div>
+                    <div class="banner-yellow aspect-w-16 aspect-h-6 rounded"></div>
                     <p class="text-lg font-bold text-stone-800 capitalize">Yellow Vein</p>
                     <p class="text-base text-stone-700">Kratom Strains</p>
                 </div>
@@ -58,7 +58,7 @@ get_template('header', [
 
             <a href="/" class="inline-block">
                 <div class="flex flex-col gap-4">
-                    <div class="banner-white aspect-w-16 aspect-h-9 rounded shadow-sm"></div>
+                    <div class="banner-white aspect-w-16 aspect-h-6 rounded"></div>
                     <p class="text-lg font-bold text-stone-800 capitalize">White Vein</p>
                     <p class="text-base text-stone-700">Kratom Strains</p>
                 </div>
