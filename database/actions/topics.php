@@ -11,7 +11,7 @@ function topic_transformer(object $args): array {
         'title' => $args->title,
         'slug' => $args->slug,
         'content' => $args->content,
-        'excerpt' => get_excerpt($args->content, 40),
+        'excerpt' => get_excerpt($args->content, 80),
     ];
     return $topic_data;
 }

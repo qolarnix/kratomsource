@@ -1,17 +1,17 @@
 <footer class="py-16 px-6 border-t border-stone-200">
     <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9 lg:gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9">
 
             <div>
                 <a href="/" class="inline-block mb-6">
                     <div class="flex items-center gap-1 select-none">
                         <ion-icon name="leaf" class="text-emerald-600 text-4xl"></ion-icon>
-                        <span class="text-3xl font-bold">KratomSource</span>
+                        <span class="text-3xl font-bold">kratomlist.org</span>
                     </div>
                 </a>
 
-                <p class="mb-3 font-medium">The Worlds Kratom Information Resource</p>
-                <p class="text-sm">&copy; Copyright <?php echo date('Y'); ?> - KratomSource LLC - All Rights Reserved</p>
+                <p class="mb-3 font-medium">The World&rsquo;s Kratom Information Resource</p>
+                <p class="text-sm leading-relaxed">&copy; Copyright <?php echo date('Y'); ?> - Kratomlist LLC - All Rights Reserved</p>
             </div>
 
             <div>

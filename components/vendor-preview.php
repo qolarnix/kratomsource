@@ -11,9 +11,6 @@ else {
 <?php 
     if($vendors):
     foreach($vendors as $vendor):
-
-    $rating = $vendor['rating'];
-    $rating_ext = 5 - $vendor['rating']; 
 ?>
     <div>
         <a href="/vendors/<?php echo $vendor['slug']; ?>">
@@ -28,19 +25,7 @@ else {
             </h3>
         </a>
         <ul class="flex items-center text-stone-800 text-sm mb-3">
-            <?php foreach(range(1, $rating) as $star): ?>
-                <li><ion-icon name="star"></ion-icon></li>
-            <?php endforeach; ?>
-            <?php 
-                if($rating !== 5):
-                foreach(range(1, $rating_ext) as $empty_star):
-            ?>
-                <li><ion-icon name="star-outline"></ion-icon></li>
-            <?php 
-                endforeach;
-                endif; 
-            ?>
-            <li class="ml-2 font-bold"><p>Reviews</p></li>
+            <li class="font-bold"><p>Reviews</p></li>
         </ul>
         <a href="<?php echo $vendor['url']; ?>" target="_block" class="inline-block flex items-center gap-1 font-bold text-stone-600 text-sm mb-6">
             <span>Visit Website</span>

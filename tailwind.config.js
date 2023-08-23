@@ -14,7 +14,8 @@ module.exports = {
             }
         },
         fontFamily: {
-            'sans': ['Public\\ Sans', 'system-ui'],
+            'display': ['Lora', 'system-ui'],
+            'sans': ['Plus\\ Jakarta\\ Sans', 'system-ui'],
         },
         extend: {},
     },

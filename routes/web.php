@@ -4,6 +4,10 @@ $router->get('/', function() {
     get_template('landing');
 });
 
+$router->get('/strains', function() {
+    get_template('strains');
+});
+
 $router->get('/wiki', function() {
     get_template('wiki');
 });

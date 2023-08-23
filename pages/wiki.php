@@ -22,7 +22,7 @@ $topics = get_topics();
 
 <section class="pt-6 pb-12 px-6 border-b border-stone-200">
     <div class="container mx-auto">
-        <h1 class="text-4xl font-medium text-center">Kratom Wiki</h1>
+        <h1 class="text-4xl font-display text-center">Kratom Wiki</h1>
     </div>
 </section>
 
