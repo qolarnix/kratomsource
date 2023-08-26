@@ -33,10 +33,10 @@ $topics = get_topics();
             <div class="min-w-[200px]">
                 <h4 class="text-lg font-bold mb-6">Table of Contents</h4>
 
-                <div class="text-base flex flex-col gap-2">
+                <div class="text-sm font-medium xl:text-base flex flex-col gap-2">
                     <a href="/wiki/" class="inline-block flex items-center gap-2 py-2">
                         <ion-icon name="document-text-outline" class="text-emerald-600 text-xl"></ion-icon>
-                        <span class="font-medium">Introduction</span>
+                        <span>Introduction</span>
                     </a>
                     <?php foreach($topics as $topic): ?>
                         <a href="/wiki/<?php echo $topic['slug']; ?>/" class="inline-block flex items-center gap-2 py-2">
