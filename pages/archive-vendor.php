@@ -17,27 +17,22 @@ $city = $cloc['city'];
                 <span>/</span>
                 <p>Vendors</p>
             </div>
-            <div></div>
         </div>
     </div>
 </section>
 
-<section class="pt-6 px-6">
+<section class="pt-6 pb-12 px-6 border-b border-stone-100">
     <div class="container mx-auto">
-        <p class="text-2xl font-medium">
-            Find kratom vendors in: <?php echo $city; ?>, <?php echo $state; ?>
-        </p>
+        <h1 class="text-4xl font-display text-left">Find Kratom Vendors</h1>
     </div>
 </section>
 
-<section class="py-16 px-6 border-b border-stone-200">
+<section class="py-16 px-6 border-b border-stone-100">
     <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
             <?php
                 get_template('vendor-preview', [
                     'count' => -1,
-                    'city' => $city,
-                    'state' => $state
                 ]);
             ?>
         </div>

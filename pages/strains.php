@@ -19,13 +19,13 @@ get_template('header', [
     </div>
 </section>
 
-<section class="pt-6 pb-12 px-6 border-b border-stone-200">
+<section class="pt-6 pb-12 px-6 border-b border-stone-100">
     <div class="container mx-auto">
         <h1 class="text-4xl font-display text-left">Explore Kratom Strains</h1>
     </div>
 </section>
 
-<section class="py-16 px-6 border-b border-stone-200">
+<section class="py-16 px-6 border-b border-stone-100">
     <div class="container mx-auto">
         <h2 class="text-left font-bold text-2xl mb-12 capitalize">
             Kratom strains by vein color

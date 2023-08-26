@@ -8,7 +8,7 @@ $topics = get_topics(3);
 $posts = get_posts(4);
 ?>
 
-<section class="py-16 md:py-24 px-6 border-b border-stone-200">
+<section class="py-16 md:py-24 px-6 bg-stone-100 border-b border-stone-100">
     <div class="container mx-auto flex items-center justify-center">
         <div class="max-w-[700px] mx-auto text-center">
             <h1 class="font-display text-3xl sm:text-4xl md:text-5xl !leading-normal mb-8">
@@ -21,7 +21,7 @@ $posts = get_posts(4);
     </div>
 </section>
 
-<section class="py-16 px-6 border-b border-stone-200">
+<section class="py-16 px-6 border-b border-stone-100">
     <div class="container mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-9">
             <?php foreach($topics as $topic): ?>
@@ -37,7 +37,7 @@ $posts = get_posts(4);
     </div>
 </section>
 
-<section class="py-16 px-6 border-b border-stone-200">
+<section class="py-16 px-6 border-b border-stone-100">
     <div class="container mx-auto">
         <h2 class="text-center font-display text-3xl mb-16">
             Kratom Vendors
@@ -61,7 +61,7 @@ $posts = get_posts(4);
 
             <?php foreach($posts as $post): ?>
                 <div class="grid grid-cols-2 gap-6">
-                    <div class="aspect-w-16 aspect-h-16 bg-stone-200 rounded"></div>
+                    <div class="aspect-w-16 aspect-h-16 bg-stone-100 rounded"></div>
                     <div>
                         <h3 class="text-xl md:text-xl font-bold leading-normal mb-4 capitalize">
                             <?php echo $post['title']; ?>

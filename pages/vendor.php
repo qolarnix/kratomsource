@@ -20,7 +20,7 @@ get_template('header', [
             <div class="flex items-center gap-2">
                 <ion-icon name="location-outline" class="text-2xl text-emerald-600 hidden md:inline"></ion-icon>
                 <p class="text-stone-600 hidden md:inline"><?php echo $vendor['address']; ?></p>
-                <a href="/" target="_block" class="inline-block md:ml-2 bg-stone-200 text-stone-600 font-medium py-1 px-4 rounded">
+                <a href="/" target="_block" class="inline-block md:ml-2 bg-stone-100 text-stone-600 font-medium py-1 px-4 rounded">
                     Open in Maps
                 </a>
             </div>
@@ -28,7 +28,7 @@ get_template('header', [
     </div>
 </section>
 
-<section class="pt-6 pb-16 px-6 border-b border-stone-200">
+<section class="pt-6 pb-16 px-6 border-b border-stone-100">
     <div class="container mx-auto">
         <div class="flex flex-wrap items-start justify-between">
 
