@@ -30,11 +30,11 @@ $r_topics = get_topics(2);
 <section class="py-16 px-6 bg-stone-100">
     <div class="container mx-auto">
 
-        <div class="flex flex-wrap xl:flex-nowrap items-start justify-start gap-12">
+        <div class="flex flex-wrap items-start justify-start gap-12">
             <div class="lg:min-w-[250px]">
                 <h4 class="text-lg font-bold mb-6">Kratom Topics</h4>
 
-                <div class="text-sm font-medium xl:text-base flex flex-col gap-0">
+                <div class="text-base font-medium flex flex-col gap-0">
                     <a href="/wiki/" class="inline-block flex items-center gap-2 py-3 border-r-4 border-emerald-600">
                         <ion-icon name="document-text-outline" class="text-emerald-600 text-xl"></ion-icon>
                         <span>Introduction</span>
@@ -48,7 +48,7 @@ $r_topics = get_topics(2);
                 </div>
             </div>
 
-            <div class="max-w-[768px] xl:min-w-[768px]">
+            <div class="max-w-[768px] lg:min-w-[768px]">
                 <div class="bg-white rounded p-12 shadow-sm mb-9">
                     <div class="flex items-center justify-between mb-4 not-prose">
                         <h3 class="font-bold font-sans text-3xl">What is Kratom?</h3>
