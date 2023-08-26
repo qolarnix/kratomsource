@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="/../assets/styles/dist.css">
     <script src="/../assets/scripts/htmx.js"></script>
+    <script src="/../assets/scripts/countable.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
