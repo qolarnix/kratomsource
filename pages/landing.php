@@ -61,7 +61,7 @@ $posts = get_posts(4);
         <div class="grid grid-cols-1 md:grid-cols-2 gap-9 lg:gap-6">
 
             <?php foreach($posts as $post): ?>
-                <div class="grid grid-cols-2 gap-6">
+                <a href="/blog/<?php echo $post['slug']; ?>/" class="inline-block grid grid-cols-2 gap-6">
                     <div class="aspect-w-16 aspect-h-16 bg-stone-100 rounded"></div>
                     <div>
                         <h3 class="text-xl md:text-xl font-bold leading-normal mb-4 capitalize">
@@ -70,7 +70,7 @@ $posts = get_posts(4);
                         <p class="mb-6 text-lg text-stone-600"><?php echo $post['excerpt']; ?></p>
                         <p class="text-emerald-600 text-sm font-medium">Author Name</p>
                     </div>
-                </div>
+                </a>
             <?php endforeach; ?>
 
         </div>
