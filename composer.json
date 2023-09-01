@@ -4,7 +4,10 @@
         "vlucas/phpdotenv": "^5.5",
         "guzzlehttp/guzzle": "^7.7",
         "illuminate/database": "^10.15",
-        "fakerphp/faker": "^1.23"
+        "fakerphp/faker": "^1.23",
+        "guzzlehttp/psr7": "^2.6",
+        "http-interop/http-factory-guzzle": "^1.2",
+        "auth0/auth0-php": "^8.7"
     },
     "scripts": {
         "dev": [
@@ -21,5 +24,10 @@
         "db-create": [
             "touch -- database/default.db || exit"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     }
 }
