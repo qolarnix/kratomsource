@@ -16,6 +16,11 @@ $env = Dotenv\Dotenv::createImmutable(__DIR__);
 require_once __DIR__ . '/database/bootstrap.php';
 
 /**
+ * Auth
+ */
+require_once __DIR__ . '/database/auth.php';
+
+/**
  * Load Plugins
  */
 require_once __DIR__ . '/plugins/plugins.php';

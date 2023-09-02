@@ -1,5 +1,12 @@
 <?php declare(strict_types=1);
 
+$env->load();
+
+define('ROUTE_URL_INDEX', rtrim($_ENV['AUTH0_BASE_URL'], '/'));
+define('ROUTE_URL_LOGIN', ROUTE_URL_INDEX . '/login');
+define('ROUTE_URL_CALLBACK', ROUTE_URL_INDEX . '/callback');
+define('ROUTE_URL_LOGOUT', ROUTE_URL_INDEX . '/logout');
+
 $router->get('/', function() {
     get_template('landing');
 });
