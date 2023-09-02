@@ -24,10 +24,7 @@
 
                 <!-- logo -->
                 <a href="/" class="inline-block">
-                    <div class="flex items-center gap-1 select-none">
-                        <ion-icon name="leaf" class="text-emerald-600 text-4xl"></ion-icon>
-                        <span class="text-3xl font-bold">kratomlist.org</span>
-                    </div>
+                    <img src="/../assets/media/kl-logo-dark.svg" alt="Kratomlist.org - The Worlds Kratom Information Resource" width="225px">
                 </a>
 
                 <div>

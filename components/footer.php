@@ -4,10 +4,7 @@
 
             <div>
                 <a href="/" class="inline-block mb-6">
-                    <div class="flex items-center gap-1 select-none">
-                        <ion-icon name="leaf" class="text-emerald-600 text-4xl"></ion-icon>
-                        <span class="text-3xl font-bold">kratomlist.org</span>
-                    </div>
+                    <img src="/../assets/media/kl-logo-dark.svg" alt="Kratomlist.org - The Worlds Kratom Information Resource" width="225px">
                 </a>
 
                 <p class="mb-3 font-medium">The World&rsquo;s Kratom Information Resource</p>
@@ -15,15 +12,15 @@
             </div>
 
             <div>
-                <h4 class="font-medium text-lg mb-3">Vendor Directory</h4>
+                <h4 class="font-bold text-lg mb-3">Vendor Directory</h4>
                 <div class="flex flex-col gap-2">
-                    <p>Claim your business</p>
+                    <p>Add your business</p>
                     <p>Find vendors</p>
                 </div>
             </div>
 
             <div>
-                <h4 class="font-medium text-lg mb-3">Learn About Kratom</h4>
+                <h4 class="font-bold text-lg mb-3">Learn About Kratom</h4>
                 <div class="flex flex-col gap-2">
                     <p>Kratom Wiki</p>
                     <p>Strains & Vein Color</p>
@@ -32,8 +29,8 @@
             </div>
 
             <div>
-                <h4 class="font-medium text-lg mb-3">Get in Touch</h4>
-                <p class="mb-8">contact@kratomsource.co</p>
+                <h4 class="font-bold text-lg mb-3">Get in Touch</h4>
+                <p class="mb-8">contact@kratomlist.org</p>
 
                 <div class="flex items-center text-2xl text-stone-600 gap-3">
                     <ion-icon name="logo-instagram"></ion-icon>
