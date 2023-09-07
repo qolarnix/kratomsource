@@ -24,7 +24,7 @@
 
                 <!-- logo -->
                 <a href="/" class="inline-block">
-                    <img src="/../assets/media/kl-logo-dark.svg" alt="Kratomlist.org - The Worlds Kratom Information Resource" width="225px">
+                    <img src="/../assets/media/kl-logo-dark.svg" alt="Kratomlist.org - The Worlds Kratom Information Resource" width="200px">
                 </a>
 
                 <div>

@@ -4,7 +4,7 @@
 
             <div>
                 <a href="/" class="inline-block mb-6">
-                    <img src="/../assets/media/kl-logo-dark.svg" alt="Kratomlist.org - The Worlds Kratom Information Resource" width="225px">
+                    <img src="/../assets/media/kl-logo-dark.svg" alt="Kratomlist.org - The Worlds Kratom Information Resource" width="200px">
                 </a>
 
                 <p class="mb-3 font-medium">The World&rsquo;s Kratom Information Resource</p>

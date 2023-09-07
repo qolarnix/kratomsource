@@ -11,8 +11,16 @@ $router->get('/', function() use($template) {
     echo $template->render('landing.php');
 });
 
-$router->get('/strains', function() use($template) {
-    echo $template->render('strains.php');
+$router->mount('/strains', function() use($router, $template) {
+
+    $router->get('/', function() use($template) {
+        echo $template->render('strains.php');
+    });
+
+    $router->get('/{vein}', function($vein) {
+        echo $vein;
+    });
+
 });
 
 $router->get('/wiki', function() use($template) {

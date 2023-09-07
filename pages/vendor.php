@@ -1,8 +1,9 @@
 <?php declare(strict_types=1);
 
 $vendor_seo_title = 'KratomSource - Order or Pickup Kratom - '. ucwords($vendor['name']);
-get_template('header', [
-    'title' => $vendor_seo_title,
+
+echo $view->render('header.php', [
+    'title' => $vendor_seo_title
 ]);
 ?>
 
@@ -90,4 +91,4 @@ get_template('header', [
 </section>
 
 <?php 
-get_template('footer');
+echo $view->render('footer.php');
