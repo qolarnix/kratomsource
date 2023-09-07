@@ -1,11 +1,10 @@
 <?php declare(strict_types=1);
 
-get_template('header', [
-    'title' => 'KratomSource - The Worlds Kratom Information Resource - Kratom Wiki'
+echo $view->render('header.php', [
+    'title' => 'Kratomlist - Learn About Kratom - Kratom Wiki'
 ]);
 
 $topics = get_topics();
-$r_topics = get_topics(2);
 ?>
 
 <section class="py-6 px-6">
@@ -55,7 +54,8 @@ $r_topics = get_topics(2);
                         <a href="#sources" class="kl-link">Sources</a>
                     </div>
 
-                    <div class="mb-9 text-stone-700 font-medium">
+                    <div class="mb-9 text-stone-700 font-medium flex items-center gap-1">
+                        <p>Reading time:</p>
                         <p id="readingTime"></p>
                     </div>
 
@@ -70,34 +70,11 @@ $r_topics = get_topics(2);
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam vel alias libero sapiente, optio molestiae, asperiores ipsa quia officia, dolores inventore. Saepe quibusdam, amet autem deserunt velit porro obcaecati <a href="/" class="kl-link-inline">consectetur</a>?
                         </p>
-
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id ducimus dolorem optio reiciendis minima facere incidunt illo, hic eius est adipisci quia iste fuga ad vitae quos. Consequuntur, nisi eum.
-                        </p>
-
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad dolores accusamus nostrum voluptates est ut nisi necessitatibus at ea sint porro, cumque voluptatibus dolore sapiente quam rerum veniam voluptas?
-                        </p>
-
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae et obcaecati numquam dolore dolores optio ab reiciendis, mollitia sit perferendis consectetur id accusantium sapiente labore veritatis modi tenetur, minus sint.
-                        </p>
                     </div>
                 </div>
 
                 <h4 class="font-medium text-xl mb-6">Sources</h4>
-
                 <div class="bg-white rounded shadow-sm py-6 px-9 mb-9"></div>
-
-                <h4 class="font-medium text-xl mb-6">More Topics</h4>
-
-                <div class="grid grid-cols-2 gap-6 mb-9">
-                    <?php foreach($r_topics as $topic): ?>
-                        <a href="/wiki/<?php echo $topic['slug']; ?>/" class="inline-block bg-white rounded shadow-sm py-6 px-9">
-                            <p class="capitalize text-lg"><?php echo $topic['title']; ?></p>
-                        </a>
-                    <?php endforeach; ?>
-                </div>
             </div>
 
             <div>
@@ -122,7 +99,7 @@ $r_topics = get_topics(2);
             let estimatedRaw = counter.words / wpm;
             let minutes = Math.round(estimatedRaw);
 
-            let effectiveTime = (minutes < 1) ? "a couple of seconds" : minutes + " minute read";
+            let effectiveTime = (minutes < 1) ? "less than a minute" : minutes + " minutes";
 
             document.querySelector('#readingTime').append(effectiveTime);
         }
@@ -130,4 +107,4 @@ $r_topics = get_topics(2);
 </script>
 
 <?php
-get_template('footer');
+echo $view->render('footer.php');

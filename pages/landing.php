@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
-get_template('header', [
-    'title' => 'KratomList - The Worlds Kratom Information Resource'
+echo $view->render('header.php', [
+    'title' => 'Kratomlist - The Worlds Kratom Information Resource'
 ]);
 
 $topics = get_topics(4);
@@ -44,8 +44,8 @@ $posts = get_posts(4);
             Kratom Vendors
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9">
-            <?php 
-                get_template('vendor-preview', [
+            <?php
+                echo $view->render('vendor-preview.php', [
                     'count' => 4
                 ]);
             ?>
@@ -78,4 +78,4 @@ $posts = get_posts(4);
 </section>
 
 <?php
-get_template('footer');
+echo $view->render('footer.php');

@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
-get_template('header', [
-    'title' => 'kratomlist.org - Kratom Strain & Vein Color - Explore Kratom Strains'
+echo $view->render('header.php', [
+    'title' => 'Kratomlist - Kratom Strain and Vein Color - Explore Kratom Strains'
 ]);
 
 ?>
@@ -19,13 +19,13 @@ get_template('header', [
     </div>
 </section>
 
-<section class="pt-6 px-6">
+<section class="pt-6 pb-12 px-6">
     <div class="container mx-auto">
         <h1 class="text-4xl font-display text-left">Explore Kratom Strains</h1>
     </div>
 </section>
 
-<section class="py-16 px-6">
+<section class="py-12 px-6 bg-stone-100">
     <div class="container mx-auto">
         <h2 class="text-left font-bold text-xl mb-12 capitalize">
             Kratom strains by vein color
@@ -67,14 +67,5 @@ get_template('header', [
     </div>
 </section>
 
-<section class="py-6 px-6">
-    <div class="container mx-auto">
-        <h2 class="text-left font-bold text-xl mb-12 capitalize">
-            Popular Kratom Strains
-        </h2>
-    </div>
-</section>
-
-
 <?php
-get_template('footer');
+echo $view->render('footer.php');

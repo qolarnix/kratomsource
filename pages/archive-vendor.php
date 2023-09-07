@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
-get_template('header', [
-    'title' => 'KratomSource - The Worlds Kratom Information Resource - Vendors'
+echo $view->render('header.php', [
+    'title' => 'Kratomlist - Find Online and Local Kratom Vendors'
 ]);
 
 $cloc = client_loc();
@@ -31,8 +31,8 @@ $city = $cloc['city'];
     <div class="container mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
             <?php
-                get_template('vendor-preview', [
-                    'count' => -1,
+                echo $view->render('vendor-preview.php', [
+                    'count' => -1
                 ]);
             ?>
         </div>
@@ -40,4 +40,4 @@ $city = $cloc['city'];
 </section>
 
 <?php
-get_template('footer');
+echo $view->render('footer.php');
