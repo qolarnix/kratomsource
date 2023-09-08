@@ -14,7 +14,6 @@ echo $view->render('header.php', [
                 <span>/</span>
                 <p>Strains</p>
             </div>
-            <div></div>
         </div>
     </div>
 </section>
@@ -27,11 +26,12 @@ echo $view->render('header.php', [
 
 <section class="py-12 px-6 bg-stone-100">
     <div class="container mx-auto">
-        <h3 class="text-left font-bold text-xl mb-12 capitalize">
+        <h3 class="text-left font-bold text-xl mb-12">
             Kratom strains by vein color
         </h3>
 
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
             <a href="/strains/green/" class="inline-block bg-white rounded shadow-sm">
                 <div class="flex flex-col">
                     <div class="banner-green aspect-w-16 aspect-h-6"></div>
@@ -41,6 +41,17 @@ echo $view->render('header.php', [
                     </div>
                 </div>
             </a>
+
+            <a href="/strains/red/" class="inline-block bg-white rounded shadow-sm">
+                <div class="flex flex-col">
+                    <div class="banner-red aspect-w-16 aspect-h-6"></div>
+                    <div class="p-4">
+                        <p class="text-lg font-bold text-stone-800 capitalize mb-1">Red Vein</p>
+                        <p class="text-base text-stone-700">Kratom Strains</p>
+                    </div>
+                </div>
+            </a>
+
         </div>
     </div>
 </section>

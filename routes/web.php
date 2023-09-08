@@ -12,15 +12,18 @@ $router->get('/', function() use($template) {
 });
 
 $router->mount('/strains', function() use($router, $template) {
-
     $router->get('/', function() use($template) {
         echo $template->render('strains.php');
     });
 
-    $router->get('/{vein}', function($vein) {
-        echo $vein;
+    $router->get('/(\w+)', function($vein) {
+        echo 'Showing all for: ' . $vein;
     });
 
+    $router->get('/(\w+)/(\w+)', function($vein, $name) {
+        echo 'Color: ' . $vein . '<br>';
+        echo 'Name: ' . $name;
+    });
 });
 
 $router->get('/wiki', function() use($template) {
