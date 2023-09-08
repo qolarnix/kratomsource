@@ -1,10 +1,10 @@
-<footer class="py-16 px-6 border-t border-stone-100">
+<footer class="py-16 px-6 bg-stone-800 text-white">
     <div class="container mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9">
 
             <div>
                 <a href="/" class="inline-block mb-6">
-                    <img src="/../assets/media/kl-logo-dark.svg" alt="Kratomlist.org - The Worlds Kratom Information Resource" width="200px">
+                    <img src="/../assets/media/kl-logo-light.svg" alt="Kratomlist.org - The Worlds Kratom Information Resource" width="200px">
                 </a>
 
                 <p class="mb-3 font-medium">The World&rsquo;s Kratom Information Resource</p>
@@ -32,7 +32,7 @@
                 <h4 class="font-bold text-lg mb-3">Get in Touch</h4>
                 <p class="mb-8">contact@kratomlist.org</p>
 
-                <div class="flex items-center text-2xl text-stone-600 gap-3">
+                <div class="flex items-center text-2xl text-stone-400 gap-3">
                     <ion-icon name="logo-instagram"></ion-icon>
                     <ion-icon name="logo-linkedin"></ion-icon>
                     <ion-icon name="logo-twitter"></ion-icon>
