@@ -6,7 +6,7 @@ require __DIR__ . '/../bootstrap.php';
 use Illuminate\Database\Capsule\Manager;
 
 // drop
-Manager::schema()->drop('topics');
+// Manager::schema()->drop('topics');
 
 // create
 Manager::schema()->create('topics', function($t) {

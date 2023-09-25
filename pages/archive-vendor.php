@@ -12,7 +12,7 @@ $city = $cloc['city'];
 <section class="py-6 px-6">
     <div class="container mx-auto">
         <div class="flex flex-wrap gap-6 items-center justify-between">
-            <div class="flex items-center gap-3 text-stone-600 capitalize">
+            <div class="flex items-center gap-3 text-slate-600 capitalize">
                 <a href="/">Home</a>
                 <span>/</span>
                 <p>Vendors</p>
@@ -21,13 +21,13 @@ $city = $cloc['city'];
     </div>
 </section>
 
-<section class="pt-6 pb-12 px-6 border-b border-stone-100">
+<section class="pt-6 pb-12 px-6 border-b border-slate-100">
     <div class="container mx-auto">
         <h1 class="text-4xl font-display text-left">Find Kratom Vendors</h1>
     </div>
 </section>
 
-<section class="py-16 px-6 border-b border-stone-100">
+<section class="py-16 px-6 border-b border-slate-100">
     <div class="container mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
             <?php

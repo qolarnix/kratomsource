@@ -18,7 +18,7 @@ require_once __DIR__ . '/database/bootstrap.php';
 /**
  * Auth
  */
-require_once __DIR__ . '/database/auth.php';
+// require_once __DIR__ . '/database/auth.php';
 
 /**
  * Load Plugins

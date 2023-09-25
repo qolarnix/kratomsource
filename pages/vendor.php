@@ -10,7 +10,7 @@ echo $view->render('header.php', [
 <section class="py-3 px-6">
     <div class="container mx-auto">
         <div class="flex flex-wrap gap-6 items-center justify-between">
-            <div class="flex items-center gap-3 text-stone-600 text-sm md:text-base capitalize">
+            <div class="flex items-center gap-3 text-slate-600 text-sm md:text-base capitalize">
                 <a href="/">Home</a>
                 <span>/</span>
                 <a href="/vendors/">Vendors</a>
@@ -20,8 +20,8 @@ echo $view->render('header.php', [
 
             <div class="flex items-center gap-2">
                 <ion-icon name="location-outline" class="text-2xl text-emerald-600 hidden md:inline"></ion-icon>
-                <p class="text-stone-600 hidden md:inline"><?php echo $vendor['address']; ?></p>
-                <a href="/" target="_block" class="inline-block md:ml-2 bg-stone-100 text-stone-600 font-medium py-1 px-4 rounded">
+                <p class="text-slate-600 hidden md:inline"><?php echo $vendor['address']; ?></p>
+                <a href="/" target="_block" class="inline-block md:ml-2 bg-slate-100 text-slate-600 font-medium py-1 px-4 rounded">
                     Open in Maps
                 </a>
             </div>
@@ -29,7 +29,7 @@ echo $view->render('header.php', [
     </div>
 </section>
 
-<section class="pt-6 pb-16 px-6 border-b border-stone-100">
+<section class="pt-6 pb-16 px-6 border-b border-slate-100">
     <div class="container mx-auto">
         <div class="flex flex-wrap items-start justify-between">
 

@@ -9,7 +9,7 @@ echo $view->render('header.php', [
 <section class="py-6 px-6">
     <div class="container mx-auto">
         <div class="flex flex-wrap gap-6 items-center justify-between">
-            <div class="flex items-center gap-3 text-stone-600 capitalize">
+            <div class="flex items-center gap-3 text-slate-600 capitalize">
                 <a href="/">Home</a>
                 <span>/</span>
                 <p>Strains</p>
@@ -24,7 +24,7 @@ echo $view->render('header.php', [
     </div>
 </section>
 
-<section class="py-12 px-6 bg-stone-100">
+<section class="py-12 px-6 bg-slate-100">
     <div class="container mx-auto">
         <h3 class="text-left font-bold text-xl mb-12">
             Kratom strains by vein color
@@ -36,8 +36,8 @@ echo $view->render('header.php', [
                 <div class="flex flex-col">
                     <div class="banner-green aspect-w-16 aspect-h-6"></div>
                     <div class="p-4">
-                        <p class="text-lg font-bold text-stone-800 capitalize mb-1">Green Vein</p>
-                        <p class="text-base text-stone-700">Kratom Strains</p>
+                        <p class="text-lg font-bold text-slate-800 capitalize mb-1">Green Vein</p>
+                        <p class="text-base text-slate-700">Kratom Strains</p>
                     </div>
                 </div>
             </a>
@@ -46,8 +46,8 @@ echo $view->render('header.php', [
                 <div class="flex flex-col">
                     <div class="banner-red aspect-w-16 aspect-h-6"></div>
                     <div class="p-4">
-                        <p class="text-lg font-bold text-stone-800 capitalize mb-1">Red Vein</p>
-                        <p class="text-base text-stone-700">Kratom Strains</p>
+                        <p class="text-lg font-bold text-slate-800 capitalize mb-1">Red Vein</p>
+                        <p class="text-base text-slate-700">Kratom Strains</p>
                     </div>
                 </div>
             </a>

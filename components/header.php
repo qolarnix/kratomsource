@@ -16,15 +16,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Pathway+Extreme:opsz,wght@8..144,400;8..144,500;8..144,700&family=Plus+Jakarta+Sans:wght@400;500;700&family=Public+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
-<body class="antialiased bg-white text-stone-800">
+<body class="antialiased bg-slate-50 text-slate-800">
 
-    <header class="py-6 px-6 border-b border-stone-100">
+    <header class="py-6 px-6 border-b border-slate-100">
         <div class="container mx-auto">
             <div class="flex flex-wrap items-center justify-between gap-8">
 
                 <!-- logo -->
                 <a href="/" class="inline-block">
-                    <img src="/../assets/media/kl-logo-dark.svg" alt="Kratomlist.org - The Worlds Kratom Information Resource" width="200px">
+                    <span class="text-3xl font-display text-emerald-950 flex items-center gap-3">
+                        <ion-icon name="leaf" class="text-emerald-600"></ion-icon>
+                        <span>Kratomlist</span>
+                    </span>
                 </a>
 
                 <div>

@@ -10,7 +10,7 @@ $topics = get_topics();
 <section class="py-6 px-6">
     <div class="container mx-auto">
         <div class="flex flex-wrap gap-6 items-center justify-between">
-            <div class="flex items-center gap-3 text-stone-600 capitalize">
+            <div class="flex items-center gap-3 text-slate-600 capitalize">
                 <a href="/">Home</a>
                 <span>/</span>
                 <p>Wiki</p>
@@ -20,13 +20,13 @@ $topics = get_topics();
     </div>
 </section>
 
-<section class="pt-6 pb-12 px-6 border-b border-stone-100">
+<section class="pt-6 pb-12 px-6 border-b border-slate-100">
     <div class="container mx-auto">
         <h1 class="text-4xl font-display text-left">Kratom Wiki</h1>
     </div>
 </section>
 
-<section class="py-16 px-6 bg-stone-100">
+<section class="py-16 px-6 bg-slate-100">
     <div class="container mx-auto">
 
         <div class="flex flex-wrap items-start justify-start gap-12">
@@ -39,7 +39,7 @@ $topics = get_topics();
                         <span>Introduction</span>
                     </a>
                     <?php foreach($topics as $topic): ?>
-                        <a href="/wiki/<?php echo $topic['slug']; ?>/" class="inline-block flex items-center gap-2 py-3 border-r-2 border-stone-200">
+                        <a href="/wiki/<?php echo $topic['slug']; ?>/" class="inline-block flex items-center gap-2 py-3 border-r-2 border-slate-200">
                             <ion-icon name="document-text-outline" class="text-emerald-600 text-xl"></ion-icon>
                             <span class="capitalize"><?php echo $topic['title']; ?></span>
                         </a>
@@ -54,7 +54,7 @@ $topics = get_topics();
                         <a href="#sources" class="kl-link">Sources</a>
                     </div>
 
-                    <div class="mb-9 text-stone-700 font-medium flex items-center gap-1">
+                    <div class="mb-9 text-slate-700 font-medium flex items-center gap-1">
                         <p>Reading time:</p>
                         <p id="readingTime"></p>
                     </div>
