@@ -50,7 +50,7 @@ $topics = get_topics();
             <div class="max-w-[768px] lg:min-w-[768px]">
                 <div class="bg-white rounded p-12 shadow-sm mb-9">
                     <div class="flex items-center justify-between mb-4 not-prose">
-                        <h3 class="font-bold font-sans text-3xl">What is Kratom?</h3>
+                        <h3 class="font-bold font-sans text-3xl">Introduction to Kratom</h3>
                         <a href="#sources" class="kl-link">Sources</a>
                     </div>
 
@@ -67,8 +67,18 @@ $topics = get_topics();
                     </div>
 
                     <div id="topicContent" class="prose font-display text-lg leading-loose">
+                        <h3>What is Kratom?</h3>
+
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam vel alias libero sapiente, optio molestiae, asperiores ipsa quia officia, dolores inventore. Saepe quibusdam, amet autem deserunt velit porro obcaecati <a href="/" class="kl-link-inline">consectetur</a>?
+                            Mitragyna speciosa, commonly known as kratom, is a tropical evergreen tree in the coffee family native to Southeast asia. Kratom has been used recreationally and as herbal medicine for hundreds of years.
+                        </p>
+
+                        <p>
+                            Kratom can produce opioid and stimulant-like effects depending on the strain, vein color and dosage. It contains over 40 alkaloids that contribute to its effects. The most well studied alkaloids are mitragynine and 7-hydroxymitragynine.
+                        </p>
+
+                        <p>
+                            While kratom has shown to be effective for managing pain and anxiety, there is still much to learn about the short and long term health effects of regular kratom use.
                         </p>
                     </div>
                 </div>

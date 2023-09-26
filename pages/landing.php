@@ -23,7 +23,7 @@ $posts = get_posts(4);
                     Learn About Kratom
                 </a>
 
-                <a href="/vendors/" class="inline-block bg-slate-50 rounded text-emerald-600 font-bold py-3 px-6 border border-slate-100 shadow hover:scale-105 transition-all">
+                <a href="/vendors/" class="inline-block bg-white rounded text-emerald-600 font-bold py-3 px-6 border border-slate-100 shadow hover:scale-105 transition-all">
                     Find Kratom Vendors
                 </a>
             </div>
