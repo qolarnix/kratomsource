@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-get_template('header');
+echo $view->render('header.php');
 ?>
 
 <section class="py-6 px-6">
@@ -18,9 +18,9 @@ get_template('header');
 
 <section class="pt-6 pb-12 px-6 border-b border-slate-100">
     <div class="container mx-auto">
-        <h1 class="text-4xl font-display text-left">Kratom News & Research Blog</h1>
+        <h1 class="text-4xl font-display text-left">Kratom News & Research</h1>
     </div>
 </section>
 
 <?php
-get_template('footer');
+echo $view->render('footer.php');

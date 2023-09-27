@@ -18,7 +18,7 @@
 </head>
 <body class="antialiased bg-slate-50 text-slate-800">
 
-    <header class="py-6 px-6 border-b border-slate-100">
+    <header class="py-6 px-6">
         <div class="container mx-auto">
             <div class="flex flex-wrap items-center justify-between gap-8">
 

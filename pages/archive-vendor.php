@@ -21,15 +21,15 @@ $city = $cloc['city'];
     </div>
 </section>
 
-<section class="pt-6 pb-12 px-6 border-b border-slate-100">
+<section class="pt-6 pb-16 px-6">
     <div class="container mx-auto">
         <h1 class="text-4xl font-display text-left">Find Kratom Vendors</h1>
     </div>
 </section>
 
-<section class="py-16 px-6 border-b border-slate-100">
+<section class="py-16 px-6 bg-slate-100 border-b border-slate-100">
     <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
             <?php
                 echo $view->render('vendor-preview.php', [
                     'count' => -1

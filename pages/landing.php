@@ -8,7 +8,7 @@ $topics = get_topics(4);
 $posts = get_posts(4);
 ?>
 
-<section class="py-16 md:py-24 px-6 border-b border-slate-100">
+<section class="py-16 px-6">
     <div class="container mx-auto flex items-center justify-center">
         <div class="max-w-[700px] mx-auto text-center">
             <h1 class="font-display text-emerald-950 text-3xl sm:text-4xl md:text-5xl lg:text-6xl !leading-normal mb-4">
@@ -53,7 +53,7 @@ $posts = get_posts(4);
         <h2 class="text-center font-display text-3xl mb-12">
             Featured Kratom Vendors
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-stretch justify-stretch gap-6">
             <?php
                 echo $view->render('vendor-preview.php', [
                     'count' => 4
