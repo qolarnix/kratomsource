@@ -29,8 +29,8 @@ $topics = get_topics();
 <section class="py-8 md:py-16 px-6 bg-slate-100">
     <div class="container mx-auto">
 
-        <div class="flex flex-wrap items-start justify-start gap-12">
-            <div class="lg:min-w-[250px]">
+        <div class="grid grid-cols-1 lg:grid-cols-9 xl:grid-cols-12 gap-6 xl:gap-12">
+            <div class="col-span-1 lg:col-span-3 xl:col-span-3">
                 <h4 class="text-lg font-bold mb-6">Kratom Topics</h4>
 
                 <div class="text-base font-medium flex flex-col gap-0">
@@ -47,8 +47,8 @@ $topics = get_topics();
                 </div>
             </div>
 
-            <div class="max-w-[768px] lg:min-w-[768px]">
-                <div class="bg-white rounded p-6 m-[-1.5rem] md:p-12 shadow-sm mb-9">
+            <div class="col-span-1 lg:col-span-6 xl:col-span-7">
+                <div class="bg-white rounded p-6 negm md:p-12 shadow-sm mb-9">
                     <div class="flex flex-wrap items-center justify-between mb-4 not-prose">
                         <h3 class="font-bold font-sans text-3xl">Introduction to Kratom</h3>
                     </div>
@@ -83,11 +83,11 @@ $topics = get_topics();
                 </div>
 
                 <h4 class="font-medium text-xl mb-6">Sources</h4>
-                <div class="bg-white rounded shadow-sm py-6 px-9 mb-9"></div>
+                <div class="bg-white rounded shadow-sm negm py-6 px-9 mb-9"></div>
             </div>
 
             <div>
-                sidebar content
+                <p>sidebar</p>
             </div>
 
         </div>

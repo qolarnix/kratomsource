@@ -4,7 +4,7 @@ echo $view->render('header.php', [
     'title' => 'Kratomlist - Kratom Strain and Vein Color - Explore Kratom Strains'
 ]);
 
-$strains = get_strains(5);
+$strains = get_strains(10);
 ?>
 
 <section class="py-6 px-6">
@@ -27,10 +27,10 @@ $strains = get_strains(5);
 
 <section class="py-12 px-6 bg-slate-100">
     <div class="container mx-auto">
+
         <h3 class="text-left font-bold text-xl mb-12">
             Kratom strains by vein color
         </h3>
-
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <a href="/strains/green/" class="inline-block bg-white rounded shadow">
                 <div class="flex flex-col">
@@ -46,13 +46,12 @@ $strains = get_strains(5);
         <h3 class="text-left font-bold text-xl mb-12">
             Popular kratom strains
         </h3>
-
         <div class="grid grid-cols-2 grid-cols-5 gap-12 mb-12">
             <?php foreach($strains as $strain): ?>
                 <a href="/strains/<?php echo $strain['type']; ?>/<?php echo $strain['slug']; ?>" class="rounded bg-white shadow">
                     <div class="banner-<?php echo $strain['type']; ?> aspect-w-16 aspect-h-6"></div>
                     <div class="p-3">
-                        <p><?php echo $strain['name']; ?></p>
+                        <p class="font-bold"><?php echo $strain['name']; ?></p>
                     </div>
                 </a>
             <?php endforeach; ?>

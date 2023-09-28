@@ -29,3 +29,7 @@ ion-icon {
 .kl-link-inline {
     @apply text-sky-600 underline
 }
+
+.negm {
+    @apply mx-[-1.5rem] md:mx-0
+}
