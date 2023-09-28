@@ -14,7 +14,7 @@ $vendors = get_vendors($count);
     <div class="bg-white rounded p-3 shadow border border-slate-100">
         <a href="/vendors/<?php echo $vendor['slug']; ?>" class="block">
             <div class="aspect-w-16 aspect-h-9 bg-slate-100 rounded mb-4 w-full"></div>
-            <h3 class="text-xl font-medium capitalize mb-6">
+            <h3 class="text-xl font-medium capitalize mb-3">
                 <p class="text-slate-500 text-sm mb-2"><?php echo $vendor['city']; ?>, <?php echo $vendor['state']; ?></p>
                 <span class="flex items-center gap-1">
                     <?php if($vendor['claimed']): ?>

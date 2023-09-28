@@ -18,3 +18,4 @@ require_once __DIR__ . '/actions/users.php';
 require_once __DIR__ . '/actions/topics.php';
 require_once __DIR__ . '/actions/vendors.php';
 require_once __DIR__ . '/actions/posts.php';
+require_once __DIR__ . '/actions/strains.php';

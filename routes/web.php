@@ -20,7 +20,7 @@ $router->mount('/strains', function() use($router, $template) {
         echo 'Showing all for: ' . $vein;
     });
 
-    $router->get('/(\w+)/(\w+)', function($vein, $name) {
+    $router->get('/(\w+)/([a-z0-9-]+)', function($vein, $name) {
         echo 'Color: ' . $vein . '<br>';
         echo 'Name: ' . $name;
     });

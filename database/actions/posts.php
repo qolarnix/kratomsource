@@ -12,6 +12,8 @@ function post_transformer(object $args): array {
         'slug' => $args->slug,
         'content' => $args->content,
         'excerpt' => get_excerpt($args->content, 80),
+        'created_at' => $args->created_at,
+        'updated_at' => $args->updated_at,
     ];
     return $post_data;
 }
