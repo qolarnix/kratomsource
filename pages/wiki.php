@@ -26,7 +26,7 @@ $topics = get_topics();
     </div>
 </section>
 
-<section class="py-16 px-6 bg-slate-100">
+<section class="py-8 md:py-16 px-6 bg-slate-100">
     <div class="container mx-auto">
 
         <div class="flex flex-wrap items-start justify-start gap-12">
@@ -34,7 +34,7 @@ $topics = get_topics();
                 <h4 class="text-lg font-bold mb-6">Kratom Topics</h4>
 
                 <div class="text-base font-medium flex flex-col gap-0">
-                    <a href="/wiki/" class="inline-block flex items-center gap-2 py-3 border-r-4 border-emerald-600">
+                    <a href="/wiki/" class="inline-block flex items-center gap-2 py-3 border-r-2 border-emerald-600">
                         <ion-icon name="document-text-outline" class="text-emerald-600 text-xl"></ion-icon>
                         <span>Introduction</span>
                     </a>
@@ -48,10 +48,9 @@ $topics = get_topics();
             </div>
 
             <div class="max-w-[768px] lg:min-w-[768px]">
-                <div class="bg-white rounded p-12 shadow-sm mb-9">
-                    <div class="flex items-center justify-between mb-4 not-prose">
+                <div class="bg-white rounded p-6 m-[-1.5rem] md:p-12 shadow-sm mb-9">
+                    <div class="flex flex-wrap items-center justify-between mb-4 not-prose">
                         <h3 class="font-bold font-sans text-3xl">Introduction to Kratom</h3>
-                        <a href="#sources" class="kl-link">Sources</a>
                     </div>
 
                     <div class="mb-9 text-slate-700 font-medium flex items-center gap-1">
