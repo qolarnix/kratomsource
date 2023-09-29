@@ -29,8 +29,10 @@ $topics = get_topics();
 <section class="py-8 md:py-16 px-6 bg-slate-100">
     <div class="container mx-auto">
 
-        <div class="grid grid-cols-1 lg:grid-cols-9 xl:grid-cols-12 gap-6 xl:gap-12">
-            <div class="col-span-1 lg:col-span-3 xl:col-span-3">
+        <div class="flex gap-9">
+
+            <!-- Side Nav -->
+            <div class="basis-[350px] hidden lg:block">
                 <h4 class="text-lg font-bold mb-6">Kratom Topics</h4>
 
                 <div class="text-base font-medium flex flex-col gap-0">
@@ -47,48 +49,39 @@ $topics = get_topics();
                 </div>
             </div>
 
-            <div class="col-span-1 lg:col-span-6 xl:col-span-7">
-                <div class="bg-white rounded p-6 negm md:p-12 shadow-sm mb-9">
-                    <div class="flex flex-wrap items-center justify-between mb-4 not-prose">
-                        <h3 class="font-bold font-sans text-3xl">Introduction to Kratom</h3>
+            <!-- Main Content -->
+            <div class="basis-full">
+                <div class="flex flex-wrap xl:flex-nowrap lg:gap-9">
+
+                    <div>
+                        <div class="bg-white rounded p-6 md:p-12 negm shadow-sm mb-9">
+                            <div class="mb-4 not-prose">
+                                <h3 class="font-bold font-sans text-3xl">Introduction to Kratom</h3>
+                            </div>
+
+                            <div class="mb-9 text-slate-700 font-medium flex items-center gap-1">
+                                <p>Reading time:</p>
+                                <p id="readingTime"></p>
+                            </div>
+
+                            <?php echo $view->render('wiki-alert.php'); ?>
+                            <div id="topicContent" class="prose font-display text-lg leading-loose">
+                                <h3>What is Kratom?</h3>
+                                <p>Mitragyna speciosa, commonly known as kratom, is a tropical evergreen tree in the coffee family native to Southeast asia. Kratom has been used recreationally and as herbal medicine for hundreds of years.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="mb-9 text-slate-700 font-medium flex items-center gap-1">
-                        <p>Reading time:</p>
-                        <p id="readingTime"></p>
+                    <div class="basis-[350px]">
+                        <div class="flex flex-col">
+                            <div>
+                                <p>Advertise your business with Kratomlist</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="bg-amber-50 border-l-4 border-amber-400 p-6 font-sans flex flex-col gap-2 mb-9 not-prose">
-                        <p class="font-bold">Lorem ipsum dolor sit amet consectetur</p>
-                        <p class="text-base leading-relaxed">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, ratione inventore repellat aperiam possimus rerum quisquam optio iure corrupti.
-                        </p>
-                    </div>
-
-                    <div id="topicContent" class="prose font-display text-lg leading-loose">
-                        <h3>What is Kratom?</h3>
-
-                        <p>
-                            Mitragyna speciosa, commonly known as kratom, is a tropical evergreen tree in the coffee family native to Southeast asia. Kratom has been used recreationally and as herbal medicine for hundreds of years.
-                        </p>
-
-                        <p>
-                            Kratom can produce opioid and stimulant-like effects depending on the strain, vein color and dosage. It contains over 40 alkaloids that contribute to its effects. The most well studied alkaloids are mitragynine and 7-hydroxymitragynine.
-                        </p>
-
-                        <p>
-                            While kratom has shown to be effective for managing pain and anxiety, there is still much to learn about the short and long term health effects of regular kratom use.
-                        </p>
-                    </div>
                 </div>
-
-                <h4 class="font-medium text-xl mb-6">Sources</h4>
-                <div class="bg-white rounded shadow-sm negm py-6 px-9 mb-9"></div>
-            </div>
-
-            <div>
-                <p>sidebar</p>
-            </div>
+            </div><!-- Main Content -->
 
         </div>
 
